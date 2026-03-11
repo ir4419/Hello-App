@@ -1,16 +1,11 @@
-public class HelloAppUC2 {
+public class HelloAppUC3 {
 
     public static void main(String[] args) {
 
-        if (args.length > 0) {
+        // Using ternary operator
+        String name = (args.length > 0) ? args[0] : "Ishita Rayudu";
 
-            String name = args[0];
-            System.out.println("Hello, " + name + "!");
-
-        } else {
-
-            System.out.println("Hello, Ishita Rayudu!");
-        }
+        System.out.println("Hello " + name);
 
     }
 }
